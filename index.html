@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Todo app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,21 +16,99 @@
 </head>
 <body>
 
-  Todo
+  <div class="app">
+      <header>
+          <h1>To Do</h1>
+          <button type="button" aria-label="night-mode">
+          </button>
+      </header>
 
-  <!-- Add dynamic number --> items left
+      <div class="text-field">
+          <div class="text-field-icon"></div>
+          <input type="text" placeholder="Create a new todo..." />
+      </div>
 
-  All
-  Active 
-  Completed
+      <div class="middle-section">
 
-  Clear Completed
+          <ul class="task-list">
+              <li class="complete-task">
+                  <div class="task-content">
+                      <button type="button" aria-label="complete toggle"></button>
+                      <p>Complete online JavaScript course</p>
+                  </div>
+                  <button class="button" aria-label="delete">
+                      <img src="images/icon-cross.svg" alt="delete" />
+                  </button>
+              </li>
 
-  Drag and drop to reorder list
+              <li class="incomplete-task">
+                <div class="task-content">
+                    <button type="button" aria-label="complete toggle"></button>
+                    <p>Jog around the park 3x</p>
+                </div>
+                <button class="button" aria-label="delete">
+                    <img src="images/icon-cross.svg" alt="delete" />
+                </button>
+              </li>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+              <li class="incomplete-task">
+                <div class="task-content">
+                    <button type="button" aria-label="complete toggle"></button>
+                    <p>10 minutes meditation</p>
+                </div>
+                <button class="button" aria-label="delete">
+                    <img src="images/icon-cross.svg" alt="delete" />
+                </button>
+              </li>
+
+              <li class="incomplete-task">
+                <div class="task-content">
+                    <button type="button" aria-label="complete toggle"></button>
+                    <p>Read for 1 hour</p>
+                </div>
+                <button class="button" aria-label="delete">
+                    <img src="images/icon-cross.svg" alt="delete" />
+                </button>
+              </li>
+
+              <li class="incomplete-task">
+                <div class="task-content">
+                    <button type="button" aria-label="complete toggle"></button>
+                    <p>Pick up groceries</p>
+                </div>
+                <button class="button" aria-label="delete">
+                    <img src="images/icon-cross.svg" alt="delete" />
+                </button>
+              </li>
+
+              <li class="incomplete-task">
+                <div class="task-content">
+                    <button type="button" aria-label="complete toggle"></button>
+                    <p>Complete Todo App on Frontend Mentor</p>
+                </div>
+                <button class="button" aria-label="delete">
+                    <img src="images/icon-cross.svg" alt="delete" />
+                </button>
+              </li>
+          </ul>
+
+          <div class="tasklist-footer">
+              <p><span="task-count">5</span> items left</p>
+              <div class="filter-list">
+                  <button type="button" aria-label="all">All</button>
+                  <button type="button" aria-label="active">Active</button>
+                  <button type="button" aria-label="completed">Completed</button>
+              </div>
+              <button type="button" aria-label="clear completed">Clear Completed</button>
+          </div>
+
+    </div>
+
+    <footer>
+        <p>Drag and drop to reorder list</p>
+    </footer>
+
   </div>
+
 </body>
 </html>
