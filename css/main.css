@@ -22,4 +22,30 @@
 
 body {
   font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  background-color: rgb(var(--clr-body-bg));
+  background-image: url("../images/bg-mobile-light.jpg");
+  background-position: top;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.app.dark {
+  background-color: rgb(var(--clr-dark-body-bg));
+  background-image: url("../images/bg-mobile-dark.jpg");
 }
