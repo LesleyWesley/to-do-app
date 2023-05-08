@@ -9,6 +9,7 @@
   --clr-medium-grey: 210, 211, 219; /*Used on "create a new todo" and "clear completed"*/
   --clr-dark-grey: 147, 148, 165; /*Used for "all active completed" text*/
   --clr-text-main: 72, 75, 106;
+  --clr-white: 255, 255, 255;
 
   /*Dark Theme Colors*/
   --clr-dark-body-bg: 22, 23, 34;
@@ -29,6 +30,7 @@ body {
   width: 100%;
   margin: 0;
   font-size: 1.125rem;
+  color: rgb(var(--clr-text-main));
 }
 
 .app {
@@ -48,4 +50,73 @@ body {
 .app.dark {
   background-color: rgb(var(--clr-dark-body-bg));
   background-image: url("../images/bg-mobile-dark.jpg");
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.9rem 0 .5rem 0;
+  width: 85%;
+}
+
+h1 {
+  color: rgb(var(--clr-body-bg));
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  font-size: 1.7rem;
+}
+
+.mode-toggle {
+  width: 1.5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("../images/icon-moon.svg");
+  background-size: contain;
+  background-position: center;
+}
+
+.mode-toggle.dark {
+  background-image: url("../images/icon-sun.svg");
+}
+
+.text-field {
+  background-color: rgb(var(--clr-white));
+  border-radius: .25rem;
+  width: 85%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.text-field-icon {
+  width: 1.25rem;
+  aspect-ratio: 1;
+  margin: .85rem 1rem;
+  border: 1px solid rgb(var(--clr-lightest-grey));
+  border-radius: 50%;
+}
+
+.add-new-input {
+  width: 100%;
+  padding: 1rem 0;
+  border: none;
+  border-radius: .25rem;
+  font-size: .85rem;
+}
+
+.text-field.dark {
+  background-color: rgb(var(--clr-dark-component-bg));
+  color: rgb(var(--clr-dark-filter-text));
+}
+
+.text-field-icon.dark {
+  border: 1px solid rgb(var(--clr-dark-darkest-items));
+}
+
+.add-new-input.dark {
+  background-color: rgb(var(--clr-dark-component-bg));
+  color: rgb(var(--clr-dark-button-hover));
 }
