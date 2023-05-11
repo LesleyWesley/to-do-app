@@ -33,6 +33,11 @@ body {
   color: rgb(var(--clr-text-main));
 }
 
+button {
+  background: rgba(0, 0, 0, 0);
+  border: none;
+}
+
 .app {
   display: flex;
   justify-content: center;
@@ -91,10 +96,10 @@ h1 {
   align-items: center;
 }
 
-.text-field-icon {
+.complete-toggle {
   width: 1.25rem;
   aspect-ratio: 1;
-  margin: .85rem 1rem;
+  margin: .85rem;
   border: 1px solid rgb(var(--clr-lightest-grey));
   border-radius: 50%;
 }
@@ -119,4 +124,41 @@ h1 {
 .add-new-input.dark {
   background-color: rgb(var(--clr-dark-component-bg));
   color: rgb(var(--clr-dark-button-hover));
+}
+
+/*Middle Section Styling*/
+
+.middle-section {
+  width: 85%;
+  background-color: rgb(var(--clr-white));
+  margin: 1rem 0;
+  border-radius: .25rem;
+  box-shadow: 0 5px 10px rgba(var(--clr-lightest-grey), 50%);
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .8rem;
+  border-bottom: 1px solid rgb(var(--clr-lightest-grey));
+  padding: .5rem 0;
+  width: 100%;
+}
+
+.task-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
