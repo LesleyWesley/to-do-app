@@ -128,7 +128,8 @@ h1 {
 
 /*Middle Section Styling*/
 
-.middle-section {
+.middle-section,
+.filter-list {
   width: 85%;
   background-color: rgb(var(--clr-white));
   margin: 1rem 0;
@@ -161,4 +162,59 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.delete {
+  margin-right: .85rem;
+  aspect-ratio: 1;
+  background-image: url("../images/icon-cross.svg");
+  background-size: .75rem;
+  background-position: center;
+}
+
+/*If task is complete */
+
+.complete-task p {
+  text-decoration: line-through;
+  color: rgb(var(--clr-medium-grey));
+}
+
+.checked-toggle {
+  background: url("../images/icon-check.svg"), linear-gradient( 125deg, rgb(var(--clr-gradient-left)), rgb(var(--clr-gradient-right)));
+  background-size:  50% contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*End of complete task styling*/
+
+.filter-list {
+  position: absolute;
+  margin-top: 2.5rem;
+}
+
+.filter-container {
+  padding: .85rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  font-size: 1rem;
+}
+
+.filter-button {
+    color: rgb(var(--clr-dark-grey));;
+}
+
+.all:hover,
+.all:focus,
+.active:hover,
+.active:focus
+.completed:hover,
+.completed:focus {
+  color: rgb(var(--clr-active-tab));
+}
+
+.active-filter {
+  color: rgb(var(--clr-active-tab));
 }

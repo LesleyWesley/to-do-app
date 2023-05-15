@@ -40,12 +40,10 @@
           <ul class="task-list">
               <li class="complete-task task">
                   <div class="task-content">
-                      <button type="button" aria-label="complete toggle" class="complete-toggle"></button>
+                      <button type="button" aria-label="complete toggle" class="complete-toggle checked-toggle"></button>
                       <p>Complete online JavaScript course</p>
                   </div>
-                  <button class="button" aria-label="delete">
-                      <img src="images/icon-cross.svg" alt="delete" />
-                  </button>
+                  <button type="button" aria-label="delete" class="delete"></button>
               </li>
 
               <li class="incomplete-task task">
@@ -53,9 +51,7 @@
                     <button type="button" aria-label="complete toggle" class="complete-toggle"></button>
                     <p>Jog around the park 3x</p>
                 </div>
-                <button class="button" aria-label="delete">
-                    <img src="images/icon-cross.svg" alt="delete" />
-                </button>
+                <button type="button" aria-label="delete" class="delete"></button>
               </li>
 
               <li class="incomplete-task task">
@@ -63,9 +59,7 @@
                     <button type="button" aria-label="complete toggle" class="complete-toggle"></button>
                     <p>10 minutes meditation</p>
                 </div>
-                <button class="button" aria-label="delete">
-                    <img src="images/icon-cross.svg" alt="delete" />
-                </button>
+                <button type="button" aria-label="delete" class="delete"></button>
               </li>
 
               <li class="incomplete-task task">
@@ -73,9 +67,7 @@
                     <button type="button" aria-label="complete toggle" class="complete-toggle"></button>
                     <p>Read for 1 hour</p>
                 </div>
-                <button class="button" aria-label="delete">
-                    <img src="images/icon-cross.svg" alt="delete" />
-                </button>
+                <button type="button" aria-label="delete" class="delete"></button>
               </li>
 
               <li class="incomplete-task task">
@@ -83,9 +75,7 @@
                     <button type="button" aria-label="complete toggle" class="complete-toggle"></button>
                     <p>Pick up groceries</p>
                 </div>
-                <button class="button" aria-label="delete">
-                    <img src="images/icon-cross.svg" alt="delete" />
-                </button>
+                <button type="button" aria-label="delete" class="delete"></button>
               </li>
 
               <li class="incomplete-task task">
@@ -93,18 +83,18 @@
                     <button type="button" aria-label="complete toggle" class="complete-toggle"></button>
                     <p>Complete Todo App on Frontend Mentor</p>
                 </div>
-                <button class="button" aria-label="delete">
-                    <img src="images/icon-cross.svg" alt="delete" />
-                </button>
+                <button type="button" aria-label="delete" class="delete"></button>
               </li>
           </ul>
 
           <div class="tasklist-footer">
               <p><span="task-count">5</span> items left</p>
               <div class="filter-list">
-                  <button type="button" aria-label="all">All</button>
-                  <button type="button" aria-label="active">Active</button>
-                  <button type="button" aria-label="completed">Completed</button>
+                  <div class="filter-container">
+                      <button type="button" aria-label="all" class="filter-button all active-filter">All</button>
+                      <button type="button" aria-label="active" class="filter-button active">Active</button>
+                      <button type="button" aria-label="completed" class="filter-button completed">Completed</button>
+                  </div>
               </div>
               <button type="button" aria-label="clear completed">Clear Completed</button>
           </div>
